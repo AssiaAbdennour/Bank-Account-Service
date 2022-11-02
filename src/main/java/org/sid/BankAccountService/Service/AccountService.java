@@ -8,4 +8,13 @@ public interface AccountService {
    BankAccountResponseDTO addAccount(BankAccountRequestDTO bankAccountDTO);
 
 
+   /* BankAccountResponseDTO bankAccountResponseDTO=BankAccountResponseDTO.builder()
+            .id(saveBankAccount.getId())
+            .balance(saveBankAccount.getBalance())
+            .createdAt(saveBankAccount.getCreatedAt())
+            .currency(saveBankAccount.getCurrency())
+            .type(saveBankAccount.getType())
+            .build();
+    */
+   BankAccountResponseDTO updateAccount(String id, BankAccountRequestDTO bankAccountDTO);
 }
